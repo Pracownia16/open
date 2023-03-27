@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            width: 960px;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: gray;
+        }
+
+        header img {
+            float: left;
+            
+            width: 128px;
+            height: 100px;
+            margin: 25px 10px;
+        }
+
+        header h1 {
+            float: right;
+            width: 80%;
+            height: 150px;
+            text-align: center;
+        
+            padding: 30px 50px;
+        }
+
+        main > form {
+            width: 100%;
+            height: 330px;
+        }
+
+        form > div {
+            padding: 50px;
+        }
+
+        .lewa {
+            float: left;
+            width: 50%;
+        }
+
+        .prawa {
+            float: right;
+            width: 50%;
+        }
+
+        .lewa label {
+            margin-top: 5px;
+            display: block;
+            margin-left: 5px;
+        }
+
+        .lewa input {
+            width: 70%;
+            margin-left: 5px;
+        }
+
+        .prawa input {
+            margin: 5px;
+            margin-left: 5px;
+        }
+
+        .prawa input[name=abcd] {
+            background-color: blue;
+            width: 120px;
+            margin-top: 16px;
+            color: wheat;
+        }
+
+        h1, h3 {
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="zsl.png" alt="zsl">
+            <h1>Dni otwarte w Zespole Szkół Łączności w Krakowie</h1>
+        </header>
+        <form>
+            <div class="lewa">
+                <h3>Dane osobowe</h3>
+                
+                <label>Imie</label>
+                <input type="text" name="sadasds" placeholder="Twoje imie...">
+
+                <label>Nazwisko</label>
+                <input type="text" name="sadasds" placeholder="Twoje imie...">
+
+                <label>Nr tele</label>
+                <input type="text" name="sadasds" placeholder="Twoje imie...">
+
+                <label>Email</label>
+                <input type="text" name="sadasds" placeholder="Twoje imie...">
+
+                <label>Zamieszkania</label>
+                <input type="text" name="sadasds" placeholder="Twoje imie...">
+
+            </div>
+            <div class="prawa">
+                <h3>Interesf </h3>
+                <input type="checkbox" name="kierunki" value="programista">
+                <label>Programista</label> <br>
+                <input type="checkbox" name="kierunki" value="programista">
+                <label>Programista</label> <br>
+                <input type="checkbox" name="kierunki" value="programista">
+                <label>Programista</label> <br>
+                <input type="checkbox" name="kierunki" value="programista">
+                <label>Programista</label> <br>
+
+                <h3>Data</h3>
+
+                <input type="radio" name="data" value="12123">
+                <label>Programista</label> <br>
+                <input type="radio" name="data" value="12123">
+                <label>Programista</label> <br>
+                <input type="radio" name="data" value="12123">
+                <label>Programista</label> <br>
+
+                <div>
+                    <input type="submit" name="abcd">
+                    <input type="reset" name="abcd">
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
